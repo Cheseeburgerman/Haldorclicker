@@ -109,7 +109,7 @@
 
 #bild{
     background-position: center;
-    background-image: url("/bilder/haldor.png");
+    background-image: url("bilder/haldor.png");
     background-repeat: no-repeat;
     background-size: 500px;
     height: 100%;

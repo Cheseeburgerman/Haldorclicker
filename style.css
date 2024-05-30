@@ -111,7 +111,7 @@ body{
 
 #bild{
     background-position: center;
-    background-image: url("/bilder/haldor.webp");
+    background-image: url("bilder/haldor.webp");
     background-repeat: no-repeat;
     background-size: 500px;
     height: 100%;

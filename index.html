@@ -5,110 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookieclicker</title>
     <link rel="stylesheet" href="style.css">
-    <script src="java.js"></script>
+    <script rel="preload" src="java.js"></script>
+    <link rel="preload" as="image" href="bilder/back.webp">
+    <link rel="preload" as="image" href="bilder/haldor.webp">
 
 </head>
 
-
-
 <body>
-    
-<div id="body">
-
-    
-    
     
 
     <div id="header">
       
         Haldor Clicker
-        
-    </div>
+       
+      </div>
     
-    <div id="flex">
+       <div id="flex">
         <p id="cookie-text">Haldors: 0</p>
         <div>
             
-        </div>
+    </div>
 
-        <div id="bild">
+            <div id="bild">
+                <input id="butt" value="" onClick="gethaldor()" width="100px" height="10000px">
+            </div>
 
-           <input id="butt" value="" onClick="bakeCookie()" width="100px" height="10000px">
-        </div>
+        <div id="hello">
 
-        
-
-
-          <div id="hello">
             <div id="meny">
 
                 Uppgrades
-               
-                <div id="firstup">HALDOR BOMB
-
-                    <input  id="buy1" type="button"  value="buy 100 Haldors" onClick="hiregyatt()">
-                </div>
-
                 
-                <div id="secondup">HALDOR FIST
-                    <input  id="buy2" type="button"  value="buy 1k Haldors" onClick="hiregyatt2()">
-                   
-                </div>
+                        <div id="firstup">HALDOR BOMB
 
-                
-                <div id="thirdup">HALDOR DASH
-                    <input  id="buy3" type="button"  value="buy 50k Haldors" onClick="hiregyatt3()">
-                   
-                   
-                </div>
+                            <input  id="buy1" type="button"  value="100 Haldors" onClick="hiregyatt()">
+                        </div>
 
-
-                <div id="forthup">HALDOR PUNCH
-                    <input  id="buy4" type="button"  value="buy 250k Haldors" onClick="hiregyatt4()">
                     
-                </div>
+                        <div id="secondup">HALDOR FIST
+                            <input  id="buy2" type="button"  value="500 Haldors" onClick="hiregyatt2()">
+                        
+                        </div>
+
+                            
+                            <div id="thirdup">HALDOR DASH
+                                <input  id="buy3" type="button"  value="10K Haldors" onClick="hiregyatt3()">
+                            
+                            
+                            </div>
 
 
-                <div id="fithup">HALDOR SMASH
-                    <input  id="buy5" type="button"  value="buy 1M Haldors" onClick="hiregyatt5()">
-                   
-                </div>
-
-                <div id="sixthup">HALDOR SLAP
-                    <input  id="buy6" type="button"  value="buy 7,5M Haldors" onClick="hiregyatt6()">
-                   
-                </div>
+                                <div id="forthup">HALDOR PUNCH
+                                    <input  id="buy4" type="button"  value="100k Haldors" onClick="hiregyatt4()">
+                                    
+                                </div>
 
 
-                <div id="seventhup">HALDOR SPIN
-                    <input  id="buy7" type="button"  value="buy 50M Haldors" onClick="hiregyatt7()">
-                </div>
+                                    <div id="fithup">HALDOR SMASH
+                                        <input  id="buy5" type="button"  value="1M Haldors" onClick="hiregyatt5()">
+                                    
+                                    </div>
+
+                                    <div id="sixthup">HALDOR SLAP
+                                        <input  id="buy6" type="button"  value="10M Haldors" onClick="hiregyatt6()">
+                                    
+                                    </div>
 
 
-                <div id="eightup">HALDOR HACK
-                    <input  id="buy8" type="button"  value="buy 150M Haldors" onClick="hiregyatt8()">
-                    
-                </div>
-
-                <div id="ninethup">
-                    HALDOR KICK
-                    <input  id="buy9" type="button"  value="buy 850M Haldors" onClick="hiregyatt9()">
-                  
-                </div>
+                                <div id="seventhup">HALDOR SPIN
+                                    <input  id="buy7" type="button"  value="50M Haldors" onClick="hiregyatt7()">
+                                </div>
 
 
-                <div id="tenthup">
-                    HALDOR POW
-                    <input  id="buy10" type="button"  value="buy 5B Haldors" onClick="hiregyatt10()">
-                   
-                </div>
-        
+                            <div id="eightup">HALDOR HACK
+                                <input  id="buy8" type="button"  value="100M Haldors" onClick="hiregyatt8()">
+                                
+                            </div>
+
+                        <div id="ninethup">
+                            HALDOR KICK
+                            <input  id="buy9" type="button"  value="500M Haldors" onClick="hiregyatt9()">
+                        
+                        </div>
+
+
+                        <div id="tenthup">
+                            HALDOR POW
+                            <input  id="buy10" type="button"  value="1B Haldors" onClick="hiregyatt10()">
+                        
+                        </div>
         
             </div>
         </div>
 
     </div>
-</div>
+
+     <div id="dap">
+
+            <div id="a1">
+            <button id="butt1" value="Hire an Auto Baker" onClick="hireAutoBaker()">
+            Get a Slave Pontus
+            150 Haldor
+            </button> 
+            <p id="cps-text"></p>
+            </div>
+            
+            <div id="a2"> 
+                <button id="butt2" value="Hire an Auto Baker" onClick="hireAutoBaker2()">
+                    Get a Slave John
+                    .1K Haldor
+                    </button> 
+                    <p id="cps-text2"></p>
+            </div>
+            
+            <div id="a3">
+                <button id="butt3" value="Hire an Auto Baker" onClick="hireAutoBaker3()">
+                    Get a Slave Arvid
+                    11K Haldor
+                    </button> 
+                    <p id="cps-text3"></p>
+            </div>
+            
+            <div id="a4">
+                <button id="butt4" value="Hire an Auto Baker" onClick="hireAutoBaker4()">
+                    Get a Slave Jac
+                    120K Haldor
+                    </button> 
+                    <p id="cps-text4"></p>
+            </div>
+
+            <div id="a5">
+                <button id="butt5" value="Hire an Auto Baker" onClick="hireAutoBaker5()">
+                    Get a Slave ´Håkan
+                    1.3M Haldor
+                    </button> 
+                    <p id="cps-text5"></p></div>
+
+            <div id="a6">
+                <button id="butt6" value="Hire an Auto Baker" onClick="hireAutoBaker6()">
+                    Get a Slave Erdem
+                    14M Haldor
+                    </button> 
+                    <p id="cps-text6"></p></div>
+
+            <div id="a7">
+                <button id="butt7" value="Hire an Auto Baker" onClick="hireAutoBaker7()">
+                    Get a Slave Anka
+                    200M Haldor
+                    </button> 
+                    <p id="cps-text7"></p></div>
+
+            <div id="a8"> 
+                <button id="butt8" value="Hire an Auto Baker" onClick="hireAutoBaker8()">
+                    Get a Slave Asarat
+                    3.3B Haldor
+                    </button> 
+                    <p id="cps-text8"></p> </div>
+
+            <div id="a9"> 
+                <button id="butt9" value="Hire an Auto Baker" onClick="hireAutoBaker9()">
+                    Get a Slave Olle
+                    50B Haldor
+                    </button> 
+                    <p id="cps-text9"></p> </div>
+
+            <div id="a10">
+                <button id="butt10" value="Hire an Auto Baker" onClick="hireAutoBaker10()">
+                    Get a girlfriend Sam
+                    100B Haldor
+                    </button> 
+                    <p id="cps-text10"></p></div>  
+
+    </div>
 
 </body>
 
